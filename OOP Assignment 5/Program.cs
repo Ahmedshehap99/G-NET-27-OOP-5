@@ -1,4 +1,9 @@
-﻿namespace OOP_Assignment_5
+﻿using OOP_Assignment_5.Assignment_05_OOP.Interfaces;
+using System.Diagnostics;
+using System.Net.Sockets;
+using System.Runtime.CompilerServices;
+
+namespace OOP_Assignment_5
 {
     internal class Program
     {
@@ -97,7 +102,174 @@
             //                 Dev - Testing
             //                 QA - Testing 
             #endregion
+            #region PART 2
 
-        }
+            //namespace Assignment_04_OOP.BookingTicket.Inheritance
+            //    {
+            //        internal class VIPTicket : Ticket
+
+            //        {
+            //            public bool LoungeAccess { get; set; }
+
+            //            public decimal ServiceFee { get; } = 50;
+            //            public VIPTicket(string movieName, decimal price, bool louAccs) : base(movieName, price + 50)
+            //            {
+
+            //                LoungeAccess = louAccs;
+            //            }
+
+            //            public override void print()
+            //            {
+            //                Console.WriteLine(
+            //                       $"[Ticket #{TicketId}] {MovieName} | VIP | Lounge: {(LoungeAccess ? "Yes" : "No")} | " +
+            //                       $"Fee: {ServiceFee} | Price: {Price} | After Tax: {PriceAfterTax:F1} | " +
+            //                       $"Booked: {(Isbooked ? "Yes" : "No")}"
+            //                 );
+            //            }
+
+
+            //public override object Clone()
+            //{
+            //    return new VIPTicket(MovieName, Price, LoungeAccess);
+            //}
+
+
+//namespace Assignment_05_OOP.Interfaces
+//    {
+//        internal interface IBookable
+//        {
+//            bool book();
+//            bool cancele();
+//            bool Isbooked { get; }
+
+
+
+//        }
+//        internal interface IBookable
+//        {
+//            bool book();
+//            bool cancele();
+//            bool Isbooked { get; }
+
+
+
+//        }
+//        internal interface IPrintable
+//        {
+
+
+//            void print();
+
+
+
+
+//        }
+//        namespace Assignment_05_OOP.Interfaces
+//        {
+//            internal interface IBookable
+//            {
+//                bool book();
+//                bool cancele();
+//                bool Isbooked { get; }
+
+
+
+//            }
+//        }
+//        internal interface IPrintable
+//        {
+
+
+//            void print();
+
+
+
+
+//        }
+//        internal class Program
+//        {
+
+
+
+//            Cinema c1 = new Cinema();
+//            c1.OpenCinema();
+
+
+//            StandardTicket t1 = new StandardTicket("Inception", 80, "A5");
+
+//            VIPTicket t2 = new VIPTicket("Avengers", 200, true);
+
+//            IMAXTicket t3 = new IMAXTicket("Dune", 130, true);
+
+
+
+//            t1.book();
+
+//            t2.book();
+
+//            t3.book();
+
+
+//            c1.AddTicket(t1);
+
+//            c1.AddTicket(t2);
+
+//            c1.AddTicket(t3);
+
+//            c1.PrintAllTickets();
+
+
+//            Console.WriteLine("\n--- Clone Test ---");
+
+
+//            VIPTicket clone = (VIPTicket)t2.Clone();
+//            clone.MovieName = "Interstellar";
+
+//            /*
+
+//            Console.Write("Original : ");
+//            t2.print();
+
+//            Console.Write("Clone    : ");
+//            clone.print();
+
+            
+//            Console.WriteLine("\n--- After Cancellation ---");
+//            t1.cancele();
+//            t1.print();
+
+//             */
+            
+//            BookingHelper.PrintAll(new IPrintable[] { t1, t2, t3
+//        });
+
+//            c1.CloseCinema();
+        
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+    //static class BookingHelper
+    //{
+    //    public static void PrintAll(IPrintable[] items)
+    //    {
+    //        Console.WriteLine("\n--- BookingHelper.PrintAll ---");
+
+    //        foreach (var item in items)
+    //        {
+    //            item.print();
+    //        }
+        }
+   
+             #endregion
 }
